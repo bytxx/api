@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "message": "Hello",
+  "servers": [
+    {
+      "name": "Uno",
+      "info": "Hello, Uno"
+    }
+  ],
+  "networks": [
+    {
+      "name": "N Uno",
+      "info": "Hello,N-Uno"
+    }
+  ]
+}
