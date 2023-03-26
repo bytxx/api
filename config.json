@@ -1,16 +1,146 @@
 {
-  "version": 1,
+  "version": 2,
   "message": "Hello",
-  "servers": [
+  "authentication": {
+    "username": "matss",
+    "password": "matss"
+  },
+  "countries": [
     {
-      "name": "Uno",
-      "info": "Hello, Uno"
+      "name": "Philippines",
+      "flag": "ph",
+      "info": "Hello, Uno",
+      "server": {
+        "host": "192.168.1.1",
+        "port": {
+          "tcp": 110,
+          "udp": 1194,
+          "ssl": 443
+        }
+      },
+      "proxy": {
+        "host": "192.168.1.1",
+        "port": 8080
+      }
     }
   ],
   "networks": [
     {
-      "name": "N Uno",
-      "info": "Hello,N-Uno"
+      "name": "UDP",
+      "info": "Hello,N-Uno",
+      "icon": "test",
+      "tweaks": {
+        "method": 0
+      }
+    },
+    {
+      "name": "TCP Direct",
+      "info": "Hello,N-Uno",
+      "icon": "test",
+      "tweaks": {
+        "method": 1
+      }
+    },
+    {
+      "name": "TCP Inject",
+      "info": "Hello,N-Uno",
+      "icon": "test",
+      "tweaks": {
+        "method": 2,
+        "payload": {
+          "payload": "",
+          "replaceHost": {
+            "host": "m.google.com"
+          }
+        }
+      },
+      "proxy": {
+        "port": 8080
+      }
+    },
+    {
+      "name": "SSL",
+      "info": "Hello World",
+      "icon": "test",
+      "tweaks": {
+        "method": 3,
+        "sni": {
+          "host": "m.google.com",
+          "protocol": "TLSv1.3"
+        }
+      }
+    },
+    {
+      "name": "SSL Proxy",
+      "info": "Hello World",
+      "icon": "test",
+      "tweaks": {
+        "method": 4,
+        "sni": {
+          "host": "m.google.com",
+          "protocol": "TLSv1.3"
+        }
+      },
+      "proxy": {
+        "port": 8888
+      }
+    },
+    {
+      "name": "SSL Payload",
+      "info": "Hello,N-Uno",
+      "icon": "test",
+      "tweaks": {
+        "method": 5,
+        "payload": {
+          "payload": "",
+          "replaceHost": {
+            "host": "m.google.com"
+          }
+        },
+        "sni": {
+          "host": "m.google.com",
+          "protocol": "TLSv1.3"
+        }
+      },
+      "proxy": {
+        "host": "192.168.1.1",
+        "port": 8080
+      },
+      "server": {
+        "host": "192.168.1.1",
+        "port": {
+          "ssl": 443
+        }
+      }
+    },
+    {
+      "name": "SSL Payload Proxy",
+      "info": "Hello,N-Uno",
+      "icon": "test",
+      "tweaks": {
+        "method": 6,
+        "payload": {
+          "payload": "",
+          "replaceHost": {
+            "host": "m.google.com"
+          }
+        },
+        "sni": {
+          "host": "m.google.com",
+          "protocol": "TLSv1.3"
+        }
+      },
+      "proxy": {
+        "host": "192.168.1.1",
+        "port": 80
+      },
+      "server": {
+        "host": "192.168.1.1",
+        "port": {
+          "ssl": 443
+        }
+      }
     }
-  ]
+  ],
+  "cert": "client\ndev tun\nproto tcp\nremote 127.0.0.1 1194\ncipher none\nauth none\nauth-user-pass\nsetenv CLIENT_CERT 0\nverb 3\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIEDzCCA3igAwIBAgIUSGN7T9XnPmvTetMRgAy0qNm7+94wDQYJKoZIhvcNAQEL\nBQAwgasxCzAJBgNVBAYTAlBIMQwwCgYDVQQIDANOQ1IxDzANBgNVBAcMBk1hbmls\nYTEUMBIGA1UECgwLQm9udlNjcmlwdHMxLzAtBgNVBAsMJmh0dHBzOi8vZ2l0aHVi\nLmNvbS9Cb252ZWlvL0JvbnZTY3JpcHRzMRAwDgYDVQQDDAdCb252ZWlvMSQwIgYJ\nKoZIhvcNAQkBFhVib252ZWlvY2hhbkBnbWFpbC5jb20wHhcNMjAwNTE5MDUxMjAz\nWhcNNDcxMDA0MDUxMjAzWjCBqzELMAkGA1UEBhMCUEgxDDAKBgNVBAgMA05DUjEP\nMA0GA1UEBwwGTWFuaWxhMRQwEgYDVQQKDAtCb252U2NyaXB0czEvMC0GA1UECwwm\naHR0cHM6Ly9naXRodWIuY29tL0JvbnZlaW8vQm9udlNjcmlwdHMxEDAOBgNVBAMM\nB0JvbnZlaW8xJDAiBgkqhkiG9w0BCQEWFWJvbnZlaW9jaGFuQGdtYWlsLmNvbTCB\nnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4RMJc08tL9puRCJU8blHNld9ri5v\noj9xirorPix8nMRpZe+m7ud3MOcEPo44pxT/cJmEmWCaxUr0c2+AC2O0FzsBTCCB\nKEiXRcjxsgI5Ot1k5K7s0xnScVrdTNnK/mM8bTaQSiH30wYSo9ijSRrmuDp3lYZM\nUl3M/Pspjoq1cn8CAwEAAaOCASwwggEoMB0GA1UdDgQWBBQYb3nTxCnRNE3kvF4G\nXqrh/uEOvTCB6wYDVR0jBIHjMIHggBQYb3nTxCnRNE3kvF4GXqrh/uEOvaGBsaSB\nrjCBqzELMAkGA1UEBhMCUEgxDDAKBgNVBAgMA05DUjEPMA0GA1UEBwwGTWFuaWxh\nMRQwEgYDVQQKDAtCb252U2NyaXB0czEvMC0GA1UECwwmaHR0cHM6Ly9naXRodWIu\nY29tL0JvbnZlaW8vQm9udlNjcmlwdHMxEDAOBgNVBAMMB0JvbnZlaW8xJDAiBgkq\nhkiG9w0BCQEWFWJvbnZlaW9jaGFuQGdtYWlsLmNvbYIUSGN7T9XnPmvTetMRgAy0\nqNm7+94wDAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQAD\ngYEAtEqHbWVsrMnKGvWFctFeB2R9k+xs01assnThJ2FOU17n8KB5eEE5o+A1DPRB\ns5aAEKczn3kuJY/77BeZ0CNRHQXf+JIEXZvmzPrTI7KIC94sC1LZW+yKLsH/mBQl\n8ui9RVjXyTOMr+zANWikRBcB282u41gFU8eJKq/HkG87BvQ=\n-----END CERTIFICATE-----\n</ca>\n"
 }
