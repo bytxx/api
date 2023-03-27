@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "message": "Hello 1",
+  "message": "Hello, Compose!",
   "authentication": {
     "username": "matss",
     "password": "matss"
@@ -30,7 +30,7 @@
       "info": "Hello,N-Uno",
       "icon": "test",
       "tweaks": {
-        "method": 0
+        "method": "udp"
       }
     },
     {
@@ -38,7 +38,7 @@
       "info": "Hello,N-Uno",
       "icon": "test",
       "tweaks": {
-        "method": 1
+        "method": "tcp"
       }
     },
     {
@@ -46,7 +46,7 @@
       "info": "Hello,N-Uno",
       "icon": "test",
       "tweaks": {
-        "method": 2,
+        "method": "tcp",
         "payload": {
           "payload": "",
           "replaceHost": {
@@ -63,7 +63,7 @@
       "info": "Hello World",
       "icon": "test",
       "tweaks": {
-        "method": 3,
+        "method": "tcp",
         "sni": {
           "host": "m.google.com",
           "protocol": "TLSv1.3"
@@ -75,7 +75,7 @@
       "info": "Hello World",
       "icon": "test",
       "tweaks": {
-        "method": 4,
+        "method": "tcp",
         "sni": {
           "host": "m.google.com",
           "protocol": "TLSv1.3"
@@ -90,7 +90,7 @@
       "info": "Hello,N-Uno",
       "icon": "test",
       "tweaks": {
-        "method": 5,
+        "method": "tcp",
         "payload": {
           "payload": "",
           "replaceHost": {
@@ -118,7 +118,7 @@
       "info": "Hello,N-Uno",
       "icon": "test",
       "tweaks": {
-        "method": 6,
+        "method": "tcp",
         "payload": {
           "payload": "",
           "replaceHost": {
