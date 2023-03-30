@@ -25,8 +25,8 @@
     }
   ],
   "networks": [
-    {
-      "name": "UDP",
+     {
+      "name": "Direct Connection",
       "info": "Hello,N-Uno",
       "icon": "test",
       "tweaks": {
@@ -34,111 +34,11 @@
       }
     },
     {
-      "name": "TCP Direct",
+      "name": "UDP",
       "info": "Hello,N-Uno",
       "icon": "test",
       "tweaks": {
-        "method": "tcp"
-      }
-    },
-    {
-      "name": "TCP Inject",
-      "info": "Hello,N-Uno",
-      "icon": "test",
-      "tweaks": {
-        "method": "tcp",
-        "payload": {
-          "payload": "",
-          "replaceHost": {
-            "host": "m.google.com"
-          }
-        }
-      },
-      "proxy": {
-        "port": 8080
-      }
-    },
-    {
-      "name": "SSL",
-      "info": "Hello World",
-      "icon": "test",
-      "tweaks": {
-        "method": "tcp",
-        "sni": {
-          "host": "m.google.com",
-          "protocol": "TLSv1.3"
-        }
-      }
-    },
-    {
-      "name": "SSL Proxy",
-      "info": "Hello World",
-      "icon": "test",
-      "tweaks": {
-        "method": "tcp",
-        "sni": {
-          "host": "m.google.com",
-          "protocol": "TLSv1.3"
-        }
-      },
-      "proxy": {
-        "port": 8888
-      }
-    },
-    {
-      "name": "SSL Payload",
-      "info": "Hello,N-Uno",
-      "icon": "test",
-      "tweaks": {
-        "method": "tcp",
-        "payload": {
-          "payload": "",
-          "replaceHost": {
-            "host": "m.google.com"
-          }
-        },
-        "sni": {
-          "host": "m.google.com",
-          "protocol": "TLSv1.3"
-        }
-      },
-      "proxy": {
-        "host": "192.168.1.1",
-        "port": 8080
-      },
-      "server": {
-        "host": "192.168.1.1",
-        "port": {
-          "ssl": 443
-        }
-      }
-    },
-    {
-      "name": "SSL Payload Proxy",
-      "info": "Hello,N-Uno",
-      "icon": "test",
-      "tweaks": {
-        "method": "tcp",
-        "payload": {
-          "payload": "",
-          "replaceHost": {
-            "host": "m.google.com"
-          }
-        },
-        "sni": {
-          "host": "m.google.com",
-          "protocol": "TLSv1.3"
-        }
-      },
-      "proxy": {
-        "host": "192.168.1.1",
-        "port": 80
-      },
-      "server": {
-        "host": "192.168.1.1",
-        "port": {
-          "ssl": 443
-        }
+        "method": "udp"
       }
     }
   ],
