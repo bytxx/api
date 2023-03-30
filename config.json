@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "message": "Hello, Jetpack Compose!",
   "authentication": {
     "username": "matss",
@@ -7,7 +7,7 @@
   },
   "countries": [
     {
-      "name": "Philippines Numbawan",
+      "name": "Philippines",
       "flag": "ph",
       "info": "Hello, Uno",
       "server": {
@@ -22,10 +22,32 @@
         "host": "192.168.1.1",
         "port": 8080
       }
+    },
+    {
+      "name": "India SpeedySSH",
+      "flag": "in",
+      "info": "Hello, India",
+      "server": {
+        "host": "143.110.184.96",
+        "port": {
+          "tcp": 701,
+          "udp": 1194,
+          "ssl": 443
+        },
+        "authentication": {
+          "username": "speedyssh.com-composeapp1",
+          "password": "composeapp1"
+        },
+        "cert": "setenv FRIENDLY_NAME \"Speedyssh.com 143.110.184.96\"\nclient\ndev tun\nproto tcp\nremote 143.110.184.96 110\nresolv-retry infinite\nnobind\nuser nobody\ngroup nogroup\npersist-key\npersist-tun\nmute-replay-warnings\ncipher AES-128-GCM\nverb 3\nmute 20\ntcp-queue-limit 256\nsetenv CLIENT_CERT 0\nauth none\nauth-nocache\nauth-user-pass\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDOTCCAiGgAwIBAgIUeuMv332Z4JD8tyE9kg+IDTWMb64wDQYJKoZIhvcNAQEL\nBQAwEDEOMAwGA1UEAwwFQmFycnkwHhcNMjIxMDE5MTU0NDAxWhcNMzIxMDE2MTU0\nNDAxWjAQMQ4wDAYDVQQDDAVCYXJyeTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC\nAQoCggEBALUq8b33pd3KUkRDbCHCGNQ5bKdXq+mr5UZCSKI0/HclNMD1SKritpjJ\nigiWqx1bxajDQM6IcJxFCm34jMJHtO7E/PMHDKDZK2YuvnXmEhPT+Hju9C1vYr30\nT5lFVafLqCAvBJv7huyd0Mi0bTIkfdwVdPJn98teUR+sJ5aNXjFvlr6Xi8YVE60g\n7mpXo2EwVHE7SXLOxGDDEmTG43NPEb+vOeMWoXfHANHslLskaKxZQBp82ZEnOl6g\njqonv4NkCN09dVwzkE1A+4talc5GkVHRu4ISlhDVZi8HF8sls5HQMkr2ZdoulfN4\nyGGgSA6lZdVWkFKfZBtUW4+thodr9CsCAwEAAaOBijCBhzAdBgNVHQ4EFgQUPbSL\n5u0n9hfE2St+5I5pPdjbg44wSwYDVR0jBEQwQoAUPbSL5u0n9hfE2St+5I5pPdjb\ng46hFKQSMBAxDjAMBgNVBAMMBUJhcnJ5ghR64y/ffZngkPy3IT2SD4gNNYxvrjAM\nBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEArlcx\n8bWm2Si13ujx1DGAJc+XFVRHWmUISZPO3Oq+zLEcXCwOtzn7D7bQXtPioYlFJ1jj\nDp10LatkgwrZZmPLjbymS6xypC6px4yigJWdLqxisv44LDLtgL0u7mKmyAQNzVHI\nP8ihnGGF1+b6rhI9zaqTckmoTMBxRmMajhw/zDIV4gaB08/kIj/DIWVyiVoNuumN\ndHXFX/JUpLK6m+vH+c290dTgbO4JC8aOEfSFIloaZ7C6f1bF/CI6kzyEV++3ihfO\nWPOUgDW3YUL9D7jSRAPrsS764qUxQXU9DBDYMsDw9c4/+EqL8K/ikXYYJOobpn2M\ndtxoycAOcDuJ1kDVnw==\n-----END CERTIFICATE-----\n</ca>"
+      },
+      "proxy": {
+        "host": "192.168.1.1",
+        "port": 8080
+      }
     }
   ],
   "networks": [
-     {
+    {
       "name": "Direct Connection",
       "info": "Hello,N-Uno",
       "icon": "test",
@@ -40,7 +62,15 @@
       "tweaks": {
         "method": "udp"
       }
+    },
+    {
+      "name": "Websocket Tunneling",
+      "info": "Hello,N-Uno",
+      "icon": "test",
+      "tweaks": {
+        "method": "udp"
+      }
     }
   ],
-  "cert": "client\ndev tun\nproto tcp\nremote 127.0.0.1 1194\ncipher none\nauth none\nauth-user-pass\nsetenv CLIENT_CERT 0\nverb 3\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIEDzCCA3igAwIBAgIUSGN7T9XnPmvTetMRgAy0qNm7+94wDQYJKoZIhvcNAQEL\nBQAwgasxCzAJBgNVBAYTAlBIMQwwCgYDVQQIDANOQ1IxDzANBgNVBAcMBk1hbmls\nYTEUMBIGA1UECgwLQm9udlNjcmlwdHMxLzAtBgNVBAsMJmh0dHBzOi8vZ2l0aHVi\nLmNvbS9Cb252ZWlvL0JvbnZTY3JpcHRzMRAwDgYDVQQDDAdCb252ZWlvMSQwIgYJ\nKoZIhvcNAQkBFhVib252ZWlvY2hhbkBnbWFpbC5jb20wHhcNMjAwNTE5MDUxMjAz\nWhcNNDcxMDA0MDUxMjAzWjCBqzELMAkGA1UEBhMCUEgxDDAKBgNVBAgMA05DUjEP\nMA0GA1UEBwwGTWFuaWxhMRQwEgYDVQQKDAtCb252U2NyaXB0czEvMC0GA1UECwwm\naHR0cHM6Ly9naXRodWIuY29tL0JvbnZlaW8vQm9udlNjcmlwdHMxEDAOBgNVBAMM\nB0JvbnZlaW8xJDAiBgkqhkiG9w0BCQEWFWJvbnZlaW9jaGFuQGdtYWlsLmNvbTCB\nnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4RMJc08tL9puRCJU8blHNld9ri5v\noj9xirorPix8nMRpZe+m7ud3MOcEPo44pxT/cJmEmWCaxUr0c2+AC2O0FzsBTCCB\nKEiXRcjxsgI5Ot1k5K7s0xnScVrdTNnK/mM8bTaQSiH30wYSo9ijSRrmuDp3lYZM\nUl3M/Pspjoq1cn8CAwEAAaOCASwwggEoMB0GA1UdDgQWBBQYb3nTxCnRNE3kvF4G\nXqrh/uEOvTCB6wYDVR0jBIHjMIHggBQYb3nTxCnRNE3kvF4GXqrh/uEOvaGBsaSB\nrjCBqzELMAkGA1UEBhMCUEgxDDAKBgNVBAgMA05DUjEPMA0GA1UEBwwGTWFuaWxh\nMRQwEgYDVQQKDAtCb252U2NyaXB0czEvMC0GA1UECwwmaHR0cHM6Ly9naXRodWIu\nY29tL0JvbnZlaW8vQm9udlNjcmlwdHMxEDAOBgNVBAMMB0JvbnZlaW8xJDAiBgkq\nhkiG9w0BCQEWFWJvbnZlaW9jaGFuQGdtYWlsLmNvbYIUSGN7T9XnPmvTetMRgAy0\nqNm7+94wDAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQAD\ngYEAtEqHbWVsrMnKGvWFctFeB2R9k+xs01assnThJ2FOU17n8KB5eEE5o+A1DPRB\ns5aAEKczn3kuJY/77BeZ0CNRHQXf+JIEXZvmzPrTI7KIC94sC1LZW+yKLsH/mBQl\n8ui9RVjXyTOMr+zANWikRBcB282u41gFU8eJKq/HkG87BvQ=\n-----END CERTIFICATE-----\n</ca>\n"
+  "cert": "setenv FRIENDLY_NAME \"Speedyssh.com 143.110.184.96\"\nclient\ndev tun\nproto tcp\nremote 143.110.184.96 110\nresolv-retry infinite\nnobind\nuser nobody\ngroup nogroup\npersist-key\npersist-tun\nmute-replay-warnings\ncipher AES-128-GCM\nverb 3\nmute 20\ntcp-queue-limit 256\nsetenv CLIENT_CERT 0\nauth none\nauth-nocache\nauth-user-pass\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDOTCCAiGgAwIBAgIUeuMv332Z4JD8tyE9kg+IDTWMb64wDQYJKoZIhvcNAQEL\nBQAwEDEOMAwGA1UEAwwFQmFycnkwHhcNMjIxMDE5MTU0NDAxWhcNMzIxMDE2MTU0\nNDAxWjAQMQ4wDAYDVQQDDAVCYXJyeTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC\nAQoCggEBALUq8b33pd3KUkRDbCHCGNQ5bKdXq+mr5UZCSKI0/HclNMD1SKritpjJ\nigiWqx1bxajDQM6IcJxFCm34jMJHtO7E/PMHDKDZK2YuvnXmEhPT+Hju9C1vYr30\nT5lFVafLqCAvBJv7huyd0Mi0bTIkfdwVdPJn98teUR+sJ5aNXjFvlr6Xi8YVE60g\n7mpXo2EwVHE7SXLOxGDDEmTG43NPEb+vOeMWoXfHANHslLskaKxZQBp82ZEnOl6g\njqonv4NkCN09dVwzkE1A+4talc5GkVHRu4ISlhDVZi8HF8sls5HQMkr2ZdoulfN4\nyGGgSA6lZdVWkFKfZBtUW4+thodr9CsCAwEAAaOBijCBhzAdBgNVHQ4EFgQUPbSL\n5u0n9hfE2St+5I5pPdjbg44wSwYDVR0jBEQwQoAUPbSL5u0n9hfE2St+5I5pPdjb\ng46hFKQSMBAxDjAMBgNVBAMMBUJhcnJ5ghR64y/ffZngkPy3IT2SD4gNNYxvrjAM\nBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEArlcx\n8bWm2Si13ujx1DGAJc+XFVRHWmUISZPO3Oq+zLEcXCwOtzn7D7bQXtPioYlFJ1jj\nDp10LatkgwrZZmPLjbymS6xypC6px4yigJWdLqxisv44LDLtgL0u7mKmyAQNzVHI\nP8ihnGGF1+b6rhI9zaqTckmoTMBxRmMajhw/zDIV4gaB08/kIj/DIWVyiVoNuumN\ndHXFX/JUpLK6m+vH+c290dTgbO4JC8aOEfSFIloaZ7C6f1bF/CI6kzyEV++3ihfO\nWPOUgDW3YUL9D7jSRAPrsS764qUxQXU9DBDYMsDw9c4/+EqL8K/ikXYYJOobpn2M\ndtxoycAOcDuJ1kDVnw==\n-----END CERTIFICATE-----\n</ca>"
 }
