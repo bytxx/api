@@ -1,11 +1,11 @@
 {
   "version": 1.0,
-  "message": "Hello, SSH2",
+  "message": "Hello, SSH2 Updated",
   "production": true,
   "token": "",
   "countries": [
     {
-      "name": "Philippines",
+      "name": "Pearl of the Orient",
       "flag": "ph",
       "info": "Manila",
       "server": {
