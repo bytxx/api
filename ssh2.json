@@ -1,0 +1,124 @@
+{
+  "version": 1.0,
+  "message": "Hello, SSH2",
+  "production": true,
+  "token": "",
+  "countries": [
+    {
+      "name": "Philippines",
+      "flag": "ph",
+      "info": "Manila",
+      "server": {
+        "ip": "192.168.0.1",
+        "port": {
+          "ssh": {
+            "dropbear": 550,
+            "openssh": 22,
+            "stunnel": 443
+          },
+          "openvpn": {
+            "tcp": 110,
+            "udp": 1194,
+            "ssl": 443
+          }
+        },
+        "proxy": {
+          "host": "192.168.1.1",
+          "port": 8080
+        },
+        "authentication": {
+          "username": "mts",
+          "password": "mts"
+        }
+      },
+      "hysteria": {
+        "server": "207.154.219.150:20000-50000",
+        "up_mbps": 10,
+        "down_mbps": 50,
+        "retry": 3,
+        "retry_interval": 5,
+        "socks5": {
+          "listen": "127.0.0.1:1080",
+          "timeout": 300
+        },
+        "auth_str": "vpnrobot",
+        "insecure": true,
+        "obfs": "robot"
+      },
+      "public_key": "",
+      "name_server": ""
+    }
+  ],
+  "networks": [
+    {
+      "name": "Dropbear",
+      "icon": "rocket",
+      "info": "SSH Direct"
+    },
+    {
+      "name": "SSH HTTP",
+      "icon": "rocket",
+      "info": "HTTP Proxy",
+      "tweaks": {
+        "payload": "",
+        "use_proxy": true
+      }
+    },
+    {
+      "name": "SSH SSL",
+      "icon": "rocket",
+      "info": "Stunnel",
+      "tweaks": {
+        "sni": ""
+      }
+    },
+    {
+      "name": "SSH SSL HTTP",
+      "icon": "rocket",
+      "info": "Websocket",
+      "tweaks": {
+        "sni": "",
+        "payload": ""
+      }
+    },
+    {
+      "name": "TikTok",
+      "icon": "rocket",
+      "info": "Websocket",
+      "tweaks": {
+        "sni": "",
+        "payload": ""
+      },
+      "dns": "twiktwok.com"
+    },
+    {
+      "name": "SSH SlowDNS",
+      "icon": "rocket",
+      "info": "DNSTT",
+      "tweaks": {
+        "dnstt": ""
+      }
+    },
+    {
+      "name": "Unlimited",
+      "icon": "rocket",
+      "info": "UDP Tunneling"
+    },
+    {
+      "name": "OpenVPN TCP Proxy",
+      "icon": "rocket",
+      "info": "TCP Proxy",
+      "tweaks": {
+        "use_proxy": true
+      }
+    },
+    {
+      "name": "OpenVPN UDP",
+      "icon": "rocket",
+      "info": "UDPv4",
+      "tweaks": {
+        "udp": true
+      }
+    }
+  ]
+}
