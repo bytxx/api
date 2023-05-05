@@ -1,6 +1,6 @@
 {
-  "version": 1.0,
-  "message": "Hello, SSH2 Updated",
+  "version": 1.1,
+  "message": "Hello, SSH2 Updated\n This is a test json update use for development\n Enjoy Freenet! Thank you!",
   "production": true,
   "token": "",
   "countries": [
