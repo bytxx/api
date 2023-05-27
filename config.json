@@ -1,76 +1,161 @@
 {
-  "version": 3,
-  "message": "Hello, Jetpack Compose!",
+  "version": 1.1,
+  "message": "Hello 1.1",
+  "production": false,
+  "token": "",
+  "ports": {
+    "openvpn": {
+      "tcp": "110",
+      "udp": "1194",
+      "ssl": "443"
+    },
+    "ssh": {
+      "dropbear": "550",
+      "openssh": "22",
+      "stunnel": "443"
+    }
+  },
   "authentication": {
     "username": "matss",
     "password": "matss"
   },
+  "cert": "",
   "countries": [
     {
-      "name": "Philippines",
-      "flag": "ph",
-      "info": "Hello, Uno",
+      "name": "SSH America",
+      "flag": "us",
+      "info": "Hello, SSH",
+      "best": true,
       "server": {
-        "host": "192.168.1.1",
-        "port": {
-          "tcp": 110,
-          "udp": 1194,
-          "ssl": 443
+        "host": "165.232.88.180",
+        "authentication": {
+          "username": "speedyssh.com-texxd",
+          "password": "texxd"
         }
       },
-      "proxy": {
-        "host": "192.168.1.1",
-        "port": 8080
-      }
-    },
-    {
-      "name": "India SpeedySSH",
-      "flag": "in",
-      "info": "Hello, India",
-      "server": {
-        "host": "143.110.184.96",
-        "port": {
-          "tcp": 701,
-          "udp": 1194,
-          "ssl": 443
-        },
-        "authentication": {
-          "username": "speedyssh.com-composeapp1",
-          "password": "composeapp1"
-        },
-        "cert": "setenv FRIENDLY_NAME \"Speedyssh.com 143.110.184.96\"\nclient\ndev tun\nproto tcp\nremote 143.110.184.96 110\nresolv-retry infinite\nnobind\nuser nobody\ngroup nogroup\npersist-key\npersist-tun\nmute-replay-warnings\ncipher AES-128-GCM\nverb 3\nmute 20\ntcp-queue-limit 256\nsetenv CLIENT_CERT 0\nauth none\nauth-nocache\nauth-user-pass\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDOTCCAiGgAwIBAgIUeuMv332Z4JD8tyE9kg+IDTWMb64wDQYJKoZIhvcNAQEL\nBQAwEDEOMAwGA1UEAwwFQmFycnkwHhcNMjIxMDE5MTU0NDAxWhcNMzIxMDE2MTU0\nNDAxWjAQMQ4wDAYDVQQDDAVCYXJyeTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC\nAQoCggEBALUq8b33pd3KUkRDbCHCGNQ5bKdXq+mr5UZCSKI0/HclNMD1SKritpjJ\nigiWqx1bxajDQM6IcJxFCm34jMJHtO7E/PMHDKDZK2YuvnXmEhPT+Hju9C1vYr30\nT5lFVafLqCAvBJv7huyd0Mi0bTIkfdwVdPJn98teUR+sJ5aNXjFvlr6Xi8YVE60g\n7mpXo2EwVHE7SXLOxGDDEmTG43NPEb+vOeMWoXfHANHslLskaKxZQBp82ZEnOl6g\njqonv4NkCN09dVwzkE1A+4talc5GkVHRu4ISlhDVZi8HF8sls5HQMkr2ZdoulfN4\nyGGgSA6lZdVWkFKfZBtUW4+thodr9CsCAwEAAaOBijCBhzAdBgNVHQ4EFgQUPbSL\n5u0n9hfE2St+5I5pPdjbg44wSwYDVR0jBEQwQoAUPbSL5u0n9hfE2St+5I5pPdjb\ng46hFKQSMBAxDjAMBgNVBAMMBUJhcnJ5ghR64y/ffZngkPy3IT2SD4gNNYxvrjAM\nBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEArlcx\n8bWm2Si13ujx1DGAJc+XFVRHWmUISZPO3Oq+zLEcXCwOtzn7D7bQXtPioYlFJ1jj\nDp10LatkgwrZZmPLjbymS6xypC6px4yigJWdLqxisv44LDLtgL0u7mKmyAQNzVHI\nP8ihnGGF1+b6rhI9zaqTckmoTMBxRmMajhw/zDIV4gaB08/kIj/DIWVyiVoNuumN\ndHXFX/JUpLK6m+vH+c290dTgbO4JC8aOEfSFIloaZ7C6f1bF/CI6kzyEV++3ihfO\nWPOUgDW3YUL9D7jSRAPrsS764qUxQXU9DBDYMsDw9c4/+EqL8K/ikXYYJOobpn2M\ndtxoycAOcDuJ1kDVnw==\n-----END CERTIFICATE-----\n</ca>"
+      "dnstt": {
+        "public_key": "eb9ba89e25f7cc5b6c3060c8e41b0f68ad74c598f31aaa8aaff218a086897350",
+        "name_server": "ane01-dns.speedyssh.cfd"
       },
-      "proxy": {
-        "host": "192.168.1.1",
-        "port": 8080
+      "hysteria": {
+        "server": "178.128.31.141:20000-50000",
+        "obfs": "boy",
+        "auth_str": "boyudp",
+        "up_mbps": 2,
+        "down_mbps": 3,
+        "retry": 3,
+        "retry_interval": 1,
+        "socks5": {
+          "listen": "127.0.0.1:1080"
+        },
+        "http": {
+          "listen": "127.0.0.1:8989"
+        },
+        "insecure": true,
+        "ca": "",
+        "recv_window_conn": 196608,
+        "recv_window": 196608
       }
     }
   ],
   "networks": [
     {
       "name": "Direct Connection",
-      "info": "Hello,N-Uno",
+      "info": "WIFI and DATA",
+      "country": "Philippines",
       "icon": "test",
       "tweaks": {
-        "method": "udp"
+        "connection": "openvpn",
+        "protocol": "udp"
+      },
+      "settings": {
+        "dns": {
+          "name": "tweetdeck.twitter.com",
+          "dns_forward": {
+            "primary": "8.8.8.8",
+            "secondary": "8.8.4.4"
+          }
+        },
+        "udp_forward" : {
+          "port": 7703
+        }
       }
     },
     {
-      "name": "UDP",
-      "info": "Hello,N-Uno",
+      "name": "UDP Connection",
+      "info": "Hysteria | Bypass",
+      "country": "Canada",
       "icon": "test",
       "tweaks": {
-        "method": "udp"
+        "hysteria_udp": true
       }
     },
     {
-      "name": "Websocket Tunneling",
-      "info": "Hello,N-Uno",
+      "name": "Bypass Free",
+      "country": "Canada",
       "icon": "test",
       "tweaks": {
-        "method": "udp"
+        "hysteria_udp": true
       }
+    },
+    {
+      "name": "SSH DNSTT",
+      "info": "Unlimited Tunneling",
+      "country": "Philippines",
+      "icon": "test",
+      "tweaks": {
+        "dnstt": ""
+      }
+    },
+    {
+      "name": "SSH Dropbear",
+      "info": "Unlimited Tunneling",
+      "country": "Russia",
+      "icon": "test"
+    },
+    {
+      "name": "SSH Direct Payload",
+      "info": "Unlimited Tunneling",
+      "country": "Russia",
+      "icon": "test",
+      "tweaks": {
+        "payload": "CONNECT [host_port] [protocol][crlf]Host: www.bughost.com[crlf][crlf]"
+      }
+    },
+    {
+      "name": "SSH HTTP",
+      "info": "Unlimited Tunneling",
+      "country": "Russia",
+      "icon": "test",
+      "tweaks": {
+        "payload": "CONNECT [host_port] [protocol][crlf]Host: www.bughost.com[crlf][crlf]"
+      },
+      "proxy": {
+        "port": 8080
+      }
+    },
+    {
+      "name": "SSH Stunnel",
+      "info": "Unlimited Tunneling",
+      "country": "Philippines",
+      "icon": "test",
+      "tweaks": {
+        "sni": "m.google.com"
+      }
+    },
+    {
+      "name": "SSH Stunnel Payload",
+      "info": "Unlimited Tunneling",
+      "country": "Philippines",
+      "icon": "test",
+      "tweaks": {
+        "payload": "CONNECT [host_port] [protocol][crlf]Host: www.bughost.com[crlf][crlf]",
+        "sni": "m.google.com"
+      },
+      "proxy": {
+        "port": 80
+      },
+      "replacePort": "80"
     }
-  ],
-  "cert": "setenv FRIENDLY_NAME \"Speedyssh.com 143.110.184.96\"\nclient\ndev tun\nproto tcp\nremote 143.110.184.96 110\nresolv-retry infinite\nnobind\nuser nobody\ngroup nogroup\npersist-key\npersist-tun\nmute-replay-warnings\ncipher AES-128-GCM\nverb 3\nmute 20\ntcp-queue-limit 256\nsetenv CLIENT_CERT 0\nauth none\nauth-nocache\nauth-user-pass\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDOTCCAiGgAwIBAgIUeuMv332Z4JD8tyE9kg+IDTWMb64wDQYJKoZIhvcNAQEL\nBQAwEDEOMAwGA1UEAwwFQmFycnkwHhcNMjIxMDE5MTU0NDAxWhcNMzIxMDE2MTU0\nNDAxWjAQMQ4wDAYDVQQDDAVCYXJyeTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC\nAQoCggEBALUq8b33pd3KUkRDbCHCGNQ5bKdXq+mr5UZCSKI0/HclNMD1SKritpjJ\nigiWqx1bxajDQM6IcJxFCm34jMJHtO7E/PMHDKDZK2YuvnXmEhPT+Hju9C1vYr30\nT5lFVafLqCAvBJv7huyd0Mi0bTIkfdwVdPJn98teUR+sJ5aNXjFvlr6Xi8YVE60g\n7mpXo2EwVHE7SXLOxGDDEmTG43NPEb+vOeMWoXfHANHslLskaKxZQBp82ZEnOl6g\njqonv4NkCN09dVwzkE1A+4talc5GkVHRu4ISlhDVZi8HF8sls5HQMkr2ZdoulfN4\nyGGgSA6lZdVWkFKfZBtUW4+thodr9CsCAwEAAaOBijCBhzAdBgNVHQ4EFgQUPbSL\n5u0n9hfE2St+5I5pPdjbg44wSwYDVR0jBEQwQoAUPbSL5u0n9hfE2St+5I5pPdjb\ng46hFKQSMBAxDjAMBgNVBAMMBUJhcnJ5ghR64y/ffZngkPy3IT2SD4gNNYxvrjAM\nBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEArlcx\n8bWm2Si13ujx1DGAJc+XFVRHWmUISZPO3Oq+zLEcXCwOtzn7D7bQXtPioYlFJ1jj\nDp10LatkgwrZZmPLjbymS6xypC6px4yigJWdLqxisv44LDLtgL0u7mKmyAQNzVHI\nP8ihnGGF1+b6rhI9zaqTckmoTMBxRmMajhw/zDIV4gaB08/kIj/DIWVyiVoNuumN\ndHXFX/JUpLK6m+vH+c290dTgbO4JC8aOEfSFIloaZ7C6f1bF/CI6kzyEV++3ihfO\nWPOUgDW3YUL9D7jSRAPrsS764qUxQXU9DBDYMsDw9c4/+EqL8K/ikXYYJOobpn2M\ndtxoycAOcDuJ1kDVnw==\n-----END CERTIFICATE-----\n</ca>"
-}
+  ]
+ }
