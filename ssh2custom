@@ -1,0 +1,18 @@
+{
+  "blockRoot": false,
+  "hwid": [
+    "test",
+    "hwis"
+  ],
+  "locked": true,
+  "salt": "uEAJqZtgXFDkbv6unk",
+  "sshConfig": {
+    "address": "uk-ssh.sshmax.xyz",
+    "authentication": {
+      "password": "bananaque",
+      "username": "sshmax-bananaque"
+    },
+    "port": 443
+  },
+  "tweaks": {}
+}
