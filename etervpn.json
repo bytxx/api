@@ -43,8 +43,7 @@
       "port": 443,
       "username": "test",
       "password": "test"
-    },
-    
+    }
   ],
   "tweaks": [
     {
