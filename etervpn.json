@@ -10,7 +10,7 @@
       "password": "test"
     }
   ],
-  "networks": [
+  "tweaks": [
     {
       "name": "test",
       "payload": "test",
