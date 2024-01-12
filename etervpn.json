@@ -10,35 +10,35 @@
       "password": "test"
     },
     {
-      "name": "one",
+      "name": "one1",
       "address": "test",
       "port": 443,
       "username": "test",
       "password": "test"
     },
     {
-      "name": "one",
+      "name": "one2",
       "address": "test",
       "port": 443,
       "username": "test",
       "password": "test"
     },
     {
-      "name": "one",
+      "name": "one3",
       "address": "test",
       "port": 443,
       "username": "test",
       "password": "test"
     },
     {
-      "name": "one",
+      "name": "one4",
       "address": "test",
       "port": 443,
       "username": "test",
       "password": "test"
     },
     {
-      "name": "one",
+      "name": "one5",
       "address": "test",
       "port": 443,
       "username": "test",
@@ -47,7 +47,12 @@
   ],
   "tweaks": [
     {
-      "name": "test",
+      "name": "test1",
+      "payload": "test",
+      "sni": "test"
+    },
+    {
+      "name": "test2",
       "payload": "test",
       "sni": "test"
     }
