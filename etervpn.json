@@ -1,6 +1,6 @@
 {
-  "version": "1.4",
-  "message": "Hello World 1.4",
+  "version": "1.5",
+  "message": "Hello World 1.5",
   "servers": [
     {
       "name": "OpenTunnel",
@@ -121,6 +121,11 @@
         "host": "test",
         "port": "8080"
       }
+    },
+    {
+      "name": "Tweak TCP Direct",
+      "info": "Bypass",
+      "icon": "ph",
     },
     {
       "name": "Tweak TCP HTTP",
