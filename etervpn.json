@@ -125,7 +125,7 @@
     {
       "name": "Tweak TCP Direct",
       "info": "Bypass",
-      "icon": "ph",
+      "icon": "ph"
     },
     {
       "name": "Tweak TCP HTTP",
