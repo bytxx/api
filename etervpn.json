@@ -1,6 +1,6 @@
 {
-  "version": "1.5",
-  "message": "Hello World 1.5",
+  "version": "1.6",
+  "message": "Hello World 1.6",
   "servers": [
     {
       "name": "OpenTunnel",
@@ -121,6 +121,11 @@
         "host": "test",
         "port": "8080"
       }
+    },
+    {
+      "name": "Tweak UDP Direct",
+      "info": "Bypass",
+      "icon": "ph"
     },
     {
       "name": "Tweak TCP Direct",
