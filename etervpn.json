@@ -1,6 +1,6 @@
 {
-  "version": "1.1",
-  "message": "Hello World 1.1",
+  "version": "1.2",
+  "message": "Hello World 1.2",
   "servers": [
     {
       "name": "Uno",
@@ -17,7 +17,7 @@
       "cert": "test"
     },
     {
-      "name": "one1",
+      "name": "Dos",
       "info": "Bypass",
       "country": "ph",
       "address": "test",
@@ -32,7 +32,7 @@
       }
     },
     {
-      "name": "one2",
+      "name": "Tres",
       "info": "Bypass",
       "country": "ph",
       "address": "test",
@@ -47,7 +47,7 @@
       }
     },
     {
-      "name": "one3",
+      "name": "Kwatro",
       "info": "Bypass",
       "country": "ph",
       "address": "test",
@@ -62,7 +62,7 @@
       }
     },
     {
-      "name": "one4",
+      "name": "Singko",
       "info": "Bypass",
       "country": "ph",
       "address": "test",
@@ -77,7 +77,7 @@
       }
     },
     {
-      "name": "one5",
+      "name": "Sais",
       "info": "Bypass",
       "country": "ph",
       "address": "test",
@@ -94,7 +94,7 @@
   ],
   "tweaks": [
     {
-      "name": "test1",
+      "name": "Tweak Websocket",
       "info": "Bypass",
       "icon": "ph",
       "payload": "test",
@@ -109,10 +109,15 @@
       }
     },
     {
-      "name": "test2",
+      "name": "Tweak TCP HTTP",
       "info": "Bypass",
       "icon": "ph",
-      "payload": "test",
+      "payload": "test"
+    },
+    {
+      "name": "Tweak TCP SNI",
+      "info": "Bypass",
+      "icon": "ph",
       "sni": "test"
     }
   ]
