@@ -4,55 +4,114 @@
   "servers": [
     {
       "name": "one1.0",
+      "info": "Bypass",
+      "country": "ph",
       "address": "test",
-      "port": 443,
+      "port": {
+        "tcp": "110",
+        "udp": "53",
+        "ssl": "443"
+      },
       "username": "test",
-      "password": "test"
+      "password": "test",
+      "cert": "test"
     },
     {
       "name": "one1",
+      "info": "Bypass",
+      "country": "ph",
       "address": "test",
-      "port": 443,
-      "username": "test",
-      "password": "test"
+      "port": {
+        "tcp": "110",
+        "udp": "53",
+        "ssl": "443"
+      },
+      "auth": {
+        "username": "test",
+        "password": "test"
+      }
     },
     {
       "name": "one2",
+      "info": "Bypass",
+      "country": "ph",
       "address": "test",
-      "port": 443,
-      "username": "test",
-      "password": "test"
+      "port": {
+        "tcp": "110",
+        "udp": "53",
+        "ssl": "443"
+      },
+      "auth": {
+        "username": "test",
+        "password": "test"
+      }
     },
     {
       "name": "one3",
+      "info": "Bypass",
+      "country": "ph",
       "address": "test",
-      "port": 443,
-      "username": "test",
-      "password": "test"
+      "port": {
+        "tcp": "110",
+        "udp": "53",
+        "ssl": "443"
+      },
+      "auth": {
+        "username": "test",
+        "password": "test"
+      }
     },
     {
       "name": "one4",
+      "info": "Bypass",
+      "country": "ph",
       "address": "test",
-      "port": 443,
-      "username": "test",
-      "password": "test"
+      "port": {
+        "tcp": "110",
+        "udp": "53",
+        "ssl": "443"
+      },
+      "auth": {
+        "username": "test",
+        "password": "test"
+      }
     },
     {
       "name": "one5",
+      "info": "Bypass",
+      "country": "ph",
       "address": "test",
-      "port": 443,
-      "username": "test",
-      "password": "test"
+      "port": {
+        "tcp": "110",
+        "udp": "53",
+        "ssl": "443"
+      },
+      "auth": {
+        "username": "test",
+        "password": "test"
+      }
     }
   ],
   "tweaks": [
     {
       "name": "test1",
+      "info": "Bypass",
+      "icon": "ph",
       "payload": "test",
-      "sni": "test"
+      "sni": "test",
+      "server": {
+        "host": "test",
+        "port": "8080"
+      },
+      "proxy": {
+        "host": "test",
+        "port": "8080"
+      }
     },
     {
       "name": "test2",
+      "info": "Bypass",
+      "icon": "ph",
       "payload": "test",
       "sni": "test"
     }
