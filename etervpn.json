@@ -1,13 +1,13 @@
 {
-  "version": "1.5",
-  "message": "Hello World 1.5",
+  "version": "1.6",
+  "message": "Hello World 1.6",
   "servers": [
     {
       "name": "OpenTunnel",
       "info": "Bypass",
       "country": "ph",
       "address": "sgo-2.optnl.com",
-      "port": {
+      "ports": {
         "tcp": "80",
         "udp": "1194",
         "ssl": "443"
@@ -21,7 +21,7 @@
       "info": "Bypass",
       "country": "ph",
       "address": "test",
-      "port": {
+      "ports": {
         "tcp": "110",
         "udp": "53",
         "ssl": "443"
@@ -35,7 +35,7 @@
       "info": "Bypass",
       "country": "jp",
       "address": "test",
-      "port": {
+      "ports": {
         "tcp": "110",
         "udp": "53",
         "ssl": "443"
@@ -50,7 +50,7 @@
       "info": "Bypass",
       "country": "sg",
       "address": "test",
-      "port": {
+      "ports": {
         "tcp": "110",
         "udp": "53",
         "ssl": "443"
@@ -65,7 +65,7 @@
       "info": "Bypass",
       "country": "nz",
       "address": "test",
-      "port": {
+      "ports": {
         "tcp": "110",
         "udp": "53",
         "ssl": "443"
@@ -80,7 +80,7 @@
       "info": "Bypass",
       "country": "sw",
       "address": "test",
-      "port": {
+      "ports": {
         "tcp": "110",
         "udp": "53",
         "ssl": "443"
@@ -95,7 +95,7 @@
       "info": "Bypass",
       "country": "ca",
       "address": "test",
-      "port": {
+      "ports": {
         "tcp": "110",
         "udp": "53",
         "ssl": "443"
@@ -115,11 +115,11 @@
       "sni": "test",
       "server": {
         "host": "test",
-        "port": "8080"
+        "ports": "8080"
       },
       "proxy": {
         "host": "test",
-        "port": "8080"
+        "ports": "8080"
       }
     },
     {
