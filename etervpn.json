@@ -1,6 +1,6 @@
 {
-  "version": "2.0",
-  "message": "Hello World 2.0",
+  "version": "2.1",
+  "message": "Hello World 2.1",
   "servers": [
     {
       "name": "OpenTunnel",
@@ -50,6 +50,22 @@
       },
       "cert": "client\ndev tun\nproto tcp\nremote ovpn-sg-1.vpnv.cc 80\nauth-nocache\nresolv-retry infinite\nroute-method exe\nresolv-retry infinite\ncipher AES-128-CBC\nnobind\npersist-key\npersist-tun\nremote-cert-tls server\nauth-user-pass\ncomp-lzo\nverb 3\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDKzCCAhOgAwIBAgIJAKwrPATeoAGBMA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV\nBAMMCENoYW5nZU1lMB4XDTIyMTExMjEyMTE1OVoXDTMyMTEwOTEyMTE1OVowEzER\nMA8GA1UEAwwIQ2hhbmdlTWUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQDIl4d6BAfzyIIV7eWgjX3iGHTpk1WhloYZKVMaqvJoIYKY1eivTItNyKi7qTwu\nmTqTDPnm7qmV0zgysohw/cZzpHXWcSCquSfg4pjwqklS4NT5VOHN98qiM8WUmTfN\n1XG678euYzGskEjo0c2NfZr76OK5QLXoiK6TnatNxCkcd1/mtgStRK2OsfE9V8YH\nbrsmqHYhN0IG9vLcuUIZDXJ2FN59snaJPZAOfDlPipKIr2cs1wLjRv5TKTHMxvT0\nuEKw9M6cWgEcebLAXoSVRrdAt6rKXWaO05z42bU3p7HfNu2N7OwriwncFOQV+kr0\nPOri1ZwIWhRc5Y3+DtIahn6dAgMBAAGjgYEwfzAdBgNVHQ4EFgQUq0DFd/YIEmSt\nk/ZwteClwnstRZQwQwYDVR0jBDwwOoAUq0DFd/YIEmStk/ZwteClwnstRZShF6QV\nMBMxETAPBgNVBAMMCENoYW5nZU1lggkArCs8BN6gAYEwDAYDVR0TBAUwAwEB/zAL\nBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBABnrhkjOCbonK639Uw7PaZv5\nHNwkl9FTvjMbenb+Q8s6g3bt+nwAr3v0KEGNe+8ybqL/Ie7HRLCiF4Ve0j+yr7jX\niKaSDxYL5+DoocXp1xTMS0aYZAFkZ0XDkBi8WBHWaGpt9CKlZXxIL5xW6V7l43Th\n4P4JUz+osIKMPnLigL8e7XF5p7r0UWeKdEgp0CYM/2M+MwL+0kVf5z6HNflNbS8h\nM+e+bggfeYdtEWx7P/8iS6XM6vcTHEEVvz3dt9MyDlDWOlu3BwETV1YfV0rLftdW\n+jRTUH47tCqw8OAlq4WGKqACh0GxQ3XnxKjxCkKF2niIPXe8SaPUTpet8Ajrvb4=\n-----END CERTIFICATE-----\n</ca>\n"
     },
+    {
+      "name": "FreeVPN SSL",
+      "info": "www.freevpn.us",
+      "country": "us",
+      "address": "103.83.159.133",
+      "ports": {
+        "tcp": "80",
+        "udp": "1194",
+        "ssl": "443"
+      },
+      "auth": {
+        "username": "freevpn.us-bananaque",
+        "password": "bananaque"
+      },
+      "cert": "client\ndev tun\nproto tcp\nremote ovpn-sg-1.vpnv.cc 443\nauth-nocache\nresolv-retry infinite\nroute-method exe\nresolv-retry infinite\ncipher AES-128-CBC\nnobind\npersist-key\npersist-tun\nremote-cert-tls server\nauth-user-pass\ncomp-lzo\nverb 3\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDKzCCAhOgAwIBAgIJAKwrPATeoAGBMA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV\nBAMMCENoYW5nZU1lMB4XDTIyMTExMjEyMTE1OVoXDTMyMTEwOTEyMTE1OVowEzER\nMA8GA1UEAwwIQ2hhbmdlTWUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQDIl4d6BAfzyIIV7eWgjX3iGHTpk1WhloYZKVMaqvJoIYKY1eivTItNyKi7qTwu\nmTqTDPnm7qmV0zgysohw/cZzpHXWcSCquSfg4pjwqklS4NT5VOHN98qiM8WUmTfN\n1XG678euYzGskEjo0c2NfZr76OK5QLXoiK6TnatNxCkcd1/mtgStRK2OsfE9V8YH\nbrsmqHYhN0IG9vLcuUIZDXJ2FN59snaJPZAOfDlPipKIr2cs1wLjRv5TKTHMxvT0\nuEKw9M6cWgEcebLAXoSVRrdAt6rKXWaO05z42bU3p7HfNu2N7OwriwncFOQV+kr0\nPOri1ZwIWhRc5Y3+DtIahn6dAgMBAAGjgYEwfzAdBgNVHQ4EFgQUq0DFd/YIEmSt\nk/ZwteClwnstRZQwQwYDVR0jBDwwOoAUq0DFd/YIEmStk/ZwteClwnstRZShF6QV\nMBMxETAPBgNVBAMMCENoYW5nZU1lggkArCs8BN6gAYEwDAYDVR0TBAUwAwEB/zAL\nBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBABnrhkjOCbonK639Uw7PaZv5\nHNwkl9FTvjMbenb+Q8s6g3bt+nwAr3v0KEGNe+8ybqL/Ie7HRLCiF4Ve0j+yr7jX\niKaSDxYL5+DoocXp1xTMS0aYZAFkZ0XDkBi8WBHWaGpt9CKlZXxIL5xW6V7l43Th\n4P4JUz+osIKMPnLigL8e7XF5p7r0UWeKdEgp0CYM/2M+MwL+0kVf5z6HNflNbS8h\nM+e+bggfeYdtEWx7P/8iS6XM6vcTHEEVvz3dt9MyDlDWOlu3BwETV1YfV0rLftdW\n+jRTUH47tCqw8OAlq4WGKqACh0GxQ3XnxKjxCkKF2niIPXe8SaPUTpet8Ajrvb4=\n-----END CERTIFICATE-----\n</ca>\n"
+     },
     {
       "name": "Uno",
       "info": "Bypass",
