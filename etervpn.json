@@ -1,6 +1,6 @@
 {
-  "version": "1.9",
-  "message": "Hello World 1.9",
+  "version": "2.0",
+  "message": "Hello World 2.0",
   "servers": [
     {
       "name": "OpenTunnel",
@@ -33,6 +33,22 @@
         "password": "etervpn"
       },
       "cert": "client\ndev tun\nproto tcp\nremote sgo-2.optnl.com 1194\nauth-nocache\nresolv-retry infinite\nroute-method exe\nresolv-retry infinite\ncipher AES-128-CBC\nnobind\npersist-key\npersist-tun\nremote-cert-tls server\nauth-user-pass\ncomp-lzo\nverb 3\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDKzCCAhOgAwIBAgIJAOvn0I3Tr7D9MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV\nBAMMCENoYW5nZU1lMB4XDTIzMDEyNzAyNDMyM1oXDTMzMDEyNDAyNDMyM1owEzER\nMA8GA1UEAwwIQ2hhbmdlTWUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQCuwh4ICKRt+uYDRUQSE9nxXsc9Z5Me/Cmaqx5dX5dYhniWdmKLei2Mo0BvZAUo\nsPI8Hufux7hlT+fSp8EHeGaO6QS8Ony7J+S6wCuBte/MkPs3gdKJ2ZXjnH0x6Aq2\nHKl2ygBjpuRTy+dqi1FidfESJlbOKRlSMTe19iY+6TGtldP4t546LHiwqv8KJFuA\n+YMjjaci02X61thVI09IF7brCaV/NCSe0NKQ6v0aImLxb5aOocI0enQB8Q8mjBhY\nqCbdHDclpI0AD0jzuGOW//NQ63dNbKCE2b3cvnOYUW4XIXSQW1oTGLAloNOi/Dbl\npzyG+1hBXLHHmqChOH+cPEcpAgMBAAGjgYEwfzAdBgNVHQ4EFgQUrHW+dtOCTj42\nXnDQhe2WO1wl49AwQwYDVR0jBDwwOoAUrHW+dtOCTj42XnDQhe2WO1wl49ChF6QV\nMBMxETAPBgNVBAMMCENoYW5nZU1lggkA6+fQjdOvsP0wDAYDVR0TBAUwAwEB/zAL\nBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBADB4g0dpjG8mw8/KHkkPfdGm\nYAxHxRMkQvh5xQu1CpPY70oTZIRxBYPrrhLZzvM5lIRMHg09fQ4K4jYZYgAyhnnK\nYWZl0Auo9BhdSMqP5XWOKWxr7yf7vHKj2A0Wep+KFkIawo/tHRfUYOV9KSkFU/Xo\nFha7lNkDjwbaTurOH7GPey1mk54zGJTsoeUqbyleA7VHePCNgXwcZzv+lZgFLUUI\n7lEPMAoAWemc6jLa/ppn4UrrdWZ5cc1A4yLARw0JvuMJvX8MBhCKuBYwxYbCEEoC\nusnJx9jZGajaf3PYzc7eojjgNhgGRL884ovOI03lFUxDOGpg9L0sF5FY4XeIggM=\n-----END CERTIFICATE-----\n</ca>\n"
+    },
+    {
+      "name": "FreeVPN",
+      "info": "www.freevpn.us",
+      "country": "us",
+      "address": "103.83.159.133",
+      "ports": {
+        "tcp": "80",
+        "udp": "1194",
+        "ssl": "443"
+      },
+      "auth": {
+        "username": "freevpn.us-bananaque",
+        "password": "bananaque"
+      },
+      "cert": "client\ndev tun\nproto tcp\nremote ovpn-sg-1.vpnv.cc 80\nauth-nocache\nresolv-retry infinite\nroute-method exe\nresolv-retry infinite\ncipher AES-128-CBC\nnobind\npersist-key\npersist-tun\nremote-cert-tls server\nauth-user-pass\ncomp-lzo\nverb 3\n<ca>\n-----BEGIN CERTIFICATE-----\nMIIDKzCCAhOgAwIBAgIJAKwrPATeoAGBMA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV\nBAMMCENoYW5nZU1lMB4XDTIyMTExMjEyMTE1OVoXDTMyMTEwOTEyMTE1OVowEzER\nMA8GA1UEAwwIQ2hhbmdlTWUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQDIl4d6BAfzyIIV7eWgjX3iGHTpk1WhloYZKVMaqvJoIYKY1eivTItNyKi7qTwu\nmTqTDPnm7qmV0zgysohw/cZzpHXWcSCquSfg4pjwqklS4NT5VOHN98qiM8WUmTfN\n1XG678euYzGskEjo0c2NfZr76OK5QLXoiK6TnatNxCkcd1/mtgStRK2OsfE9V8YH\nbrsmqHYhN0IG9vLcuUIZDXJ2FN59snaJPZAOfDlPipKIr2cs1wLjRv5TKTHMxvT0\nuEKw9M6cWgEcebLAXoSVRrdAt6rKXWaO05z42bU3p7HfNu2N7OwriwncFOQV+kr0\nPOri1ZwIWhRc5Y3+DtIahn6dAgMBAAGjgYEwfzAdBgNVHQ4EFgQUq0DFd/YIEmSt\nk/ZwteClwnstRZQwQwYDVR0jBDwwOoAUq0DFd/YIEmStk/ZwteClwnstRZShF6QV\nMBMxETAPBgNVBAMMCENoYW5nZU1lggkArCs8BN6gAYEwDAYDVR0TBAUwAwEB/zAL\nBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBABnrhkjOCbonK639Uw7PaZv5\nHNwkl9FTvjMbenb+Q8s6g3bt+nwAr3v0KEGNe+8ybqL/Ie7HRLCiF4Ve0j+yr7jX\niKaSDxYL5+DoocXp1xTMS0aYZAFkZ0XDkBi8WBHWaGpt9CKlZXxIL5xW6V7l43Th\n4P4JUz+osIKMPnLigL8e7XF5p7r0UWeKdEgp0CYM/2M+MwL+0kVf5z6HNflNbS8h\nM+e+bggfeYdtEWx7P/8iS6XM6vcTHEEVvz3dt9MyDlDWOlu3BwETV1YfV0rLftdW\n+jRTUH47tCqw8OAlq4WGKqACh0GxQ3XnxKjxCkKF2niIPXe8SaPUTpet8Ajrvb4=\n-----END CERTIFICATE-----\n</ca>\n"
     },
     {
       "name": "Uno",
@@ -151,19 +167,20 @@
     {
       "name": "Tweak TCP Direct",
       "info": "Bypass",
-      "icon": "ph"
+      "icon": "ph",
+      "protocol": "tcp"
     },
     {
       "name": "Tweak TCP HTTP",
       "info": "Bypass",
       "icon": "ph",
-      "payload": "test"
+      "payload": ""
     },
     {
       "name": "Tweak TCP SNI",
       "info": "Bypass",
       "icon": "ph",
-      "sni": "test"
+      "sni": "m.google.com"
     }
   ]
 }
