@@ -1,6 +1,6 @@
 {
-  "version": "2.2",
-  "message": "Hello World 2.2",
+  "version": "2.3",
+  "message": "Hello World 2.3",
   "servers": [
     {
       "name": "OpenTunnel",
